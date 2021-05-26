@@ -1,0 +1,10 @@
+You can add vagrant host configuration to your local ssh config.
+vagrant ssh-config >> ~/.ssh/config
+ssh vagrant@{host}
+ex. cat ~/.ssh/config
+Host kmaster
+  HostName 127.0.0.1
+  User vagrant
+  Port 2222..
+  ....
+ssh vagrant@kmaster
